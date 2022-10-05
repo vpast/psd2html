@@ -1,0 +1,520 @@
+<!--  1.	First of all, I would say it is a very good attempt for a beginner. The code just needs some fine tweaks. 
+
+2.	Scrollable feature code must be included in css code to make your website flow more smooth 
+
+3.	The responsiveness of website is lacking. You need to make adjustments with the bootstrap code in order make your website look fine in all resolutions. (for example, nav bar hides when screen resolution changes)
+
+4.	The functionality of moving from one section of the website to another is missing (for example, if we click on reviews it does not take us to review section)
+
+5.	In screenshot section, the text and images are to congested 
+
+6.	It is good practice to write quotations using quote tag. please consider it 
+
+7.	It is good practice to write JavaScript code in JavaScript file instead of writing it in html. This makes your code clean
+
+8.   make your nav bar fix so it stays on top while scrolling 
+
+9.  A landing page should use a scrollspy feature of bootstrap to enhance user-friendly experience-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun Weather</title>
+    <link rel="shortcut icon" href="img/weather.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Ubuntu&subset=cyrillic,latin"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="сss/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="back">
+      <header>
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            <!--use correct bootstrap class (navbar navbar-expand-lg navbar-dark) -->
+            <div
+              class="collapse navbar-collapse"
+              id="navbarSupportedContent"
+              id="header"
+            >
+              <!-- after this you need to add button tag to display a hamburger menu when minimizing the screen-->
+              <div>
+                <a href="#header" class="navbar-brand" style="font-weight: bold"
+                  >FUN WEATHER.</a
+                >
+              </div>
+              <ul class="navbar-nav w-50 nav-fill ulLinks">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#reviews">Reviews</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#download">Download</a>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <span class="navbar_icons">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"
+                      ><i class="fa fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"
+                      ><i class="fa fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"
+                      ><i class="fa fa-twitter"></i
+                    ></a>
+                  </li>
+                </span>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-10 col-md-6 offset-1 offset-md-0 text_placement"
+              id="home"
+            >
+              <p class="hero_name">Get the most fun weather app</p>
+              <p class="hero_description">
+                Simple, nice and user-freinldy application of the weather. Only
+                useful information
+              </p>
+              <div class="header_flex_btn">
+                <button
+                  type="button"
+                  class="btn btn-primary header_btn header_button_1"
+                >
+                  Download
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary header_btn header_button_2"
+                >
+                  Features
+                </button>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 offset-1 offset-md-0" id="phone_img">
+              <img src="img/phone.png" />
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <main>
+      <div class="container">
+        <!--either center align all the text or images or place pictures and images on extreme left and extreme right-->
+        <div class="row">
+          <div
+            class="col d-flex align-items-center flex-column margins"
+            id="features"
+          >
+            <p class="text_in_main">PERFECT FEATURES</p>
+            <p class="mini_description">Only necessary</p>
+          </div>
+        </div>
+        <div class="row icons_block">
+          <div class="row col-md-4 offset-1 offset-md-0">
+            <div class="col-md-3">
+              <!--  use align center tag -->
+              <img src="img/diamond.png" alt="diamond_icon" />
+              <!-- use alt tag and img-responsive class-->
+            </div>
+            <div class="col-md-9">
+              <p class="icons_naming">Usability</p>
+              <p class="col align-self-end pl-0 icons_description text-left">
+                Sometimes the simplest things are the hardest to find. So we
+                created a new line for everyday life.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 offset-1 offset-md-0">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="img/stack.png" alt="stack_of_books_icon" />
+                <!-- use alt tag and img-responsive class -->
+              </div>
+              <div class="col-md-9">
+                <p class="icons_naming">Parallax Effect</p>
+                <p class="col align-self-end pl-0 icons_description text-left">
+                  Sometimes the simplest things are the hardest to find. So we
+                  created a new line for everyday life.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row col-md-4 offset-1 offset-md-0">
+            <div class="col-md-3">
+              <img src="img/water drop.png" alt="water_drop_icon" />
+              <!-- use alt tag and img-responsive class -->
+            </div>
+            <div class="col-md-9">
+              <p class="icons_naming">Unlimites Colors</p>
+              <p class="col align-self-end pl-0 icons_description text-left">
+                Sometimes the simplest things are the hardest to find. So we
+                created a new line for everyday life.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col d-flex align-items-center justify-content-center flex-column margins"
+        >
+          <!--use slide class to add crousel functionality-->
+          <p class="text_in_main">SIMPLE WIDGETS</p>
+          <p class="mini_description">Drag and drop</p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <img src="img/widget images.png" />
+          <!-- use alt tag and img-responsive class -->
+        </div>
+        <div
+          class="col d-flex align-items-center justify-content-center flex-column margins"
+        >
+          <!--adjust screenshots and text so that they look more presentable-->
+          <p class="text_in_main">SCREENSHOTS</p>
+          <p class="mini_description">The brighest images</p>
+        </div>
+        <div class="row d-flex mb-5">
+          <div>
+            <img src="img/cloudy phone.png" />
+            <!-- use alt tag and img-responsive class -->
+          </div>
+          <div class="d-flex flex-column">
+            <p class="text_in_main">WHEN THE CLOUDS</p>
+            <p class="section_description">
+              Variable information on the air humidity, the feeling of the
+              weather and the ability to share this with your friends
+            </p>
+          </div>
+        </div>
+        <div class="row d-flex mb-5">
+          <div class="d-flex flex-column">
+            <p class="text_in_main">WHEN THE SUN</p>
+            <p class="section_description">
+              Sometimes the simplest things are the hardest to find. So we
+              created a new line for everyday life. Sometimes the simplest
+            </p>
+          </div>
+          <div class="open-popup">
+            <img src="img/sunny phone.png" />
+            <!-- use alt tag and img-responsive class -->
+          </div>
+        </div>
+        <div class="row d-flex mb-5">
+          <div>
+            <img src="img/rainy phone.png" />
+            <!-- use alt tag and img-responsive class -->
+          </div>
+          <div class="d-flex flex-column">
+            <p class="text_in_main">WHEN THE RAIN</p>
+            <p class="section_description">
+              Sometimes the simplest things are the hardest to find. So we
+              created a new line for everyday life. Sometimes the simplest
+            </p>
+          </div>
+        </div>
+        <div
+          class="col d-flex align-items-center flex-column margins"
+          id="reviews"
+        >
+          <p class="text_in_main">WHAT PEOPLE ARE SAYING</p>
+          <p class="mini_description">Reviews</p>
+        </div>
+        <div class="row justify-content-center d-flex flex-row mb-5">
+          <div class="col-6 d-flex flex-column">
+            <div class="quote_box">
+              <div class="mb-4">
+                <img src="img/quotation mark up.png" />
+                <!-- use alt tag and img-responsive class -->
+              </div>
+              <div>
+                <p class="text_reviews">
+                  <q
+                    >What art offers is space - a certain breathing room for the
+                    spirit.</q
+                  >
+                </p>
+              </div>
+              <div>
+                <p>John Updike</p>
+              </div>
+              <div class="d-flex justify-content-end">
+                <img src="img/quotation mark down.png" />
+                <!-- use alt tag and img-responsive class -->
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-flex flex-column">
+            <div class="quote_box">
+              <div class="mb-4">
+                <img src="img/quotation mark up.png" />
+                <!-- use alt tag and img-responsive class -->
+              </div>
+              <div>
+                <p class="text_reviews">
+                  <q
+                    >What art offers is space - a certain breathing room for the
+                    spirit.</q
+                  >
+                </p>
+              </div>
+              <div>
+                <p>William Hazlitt</p>
+              </div>
+              <div class="d-flex justify-content-end">
+                <img src="img/quotation mark down.png" />
+                <!-- use alt tag and img-responsive class -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center d-flex flex-row">
+          <div class="col-6 d-flex flex-column">
+            <div class="quote_box">
+              <div class="mb-4">
+                <img src="img/quotation mark up.png" />
+                <!-- use alt tag and img-responsive class -->
+              </div>
+              <div>
+                <p class="text_reviews">
+                  <q
+                    >What art offers is space - a certain breathing room for the
+                    spirit.</q
+                  >
+                </p>
+              </div>
+              <div>
+                <p>Mignon McLaughlin</p>
+              </div>
+              <div class="d-flex justify-content-end">
+                <img src="img/quotation mark down.png" />
+                <!-- use alt tag and img-responsive class -->
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-flex flex-column">
+            <div class="quote_box">
+              <div class="mb-4">
+                <img src="img/quotation mark up.png" />
+                <!-- use alt tag and img-responsive class -->
+              </div>
+              <div>
+                <p class="text_reviews">
+                  <q
+                    >What art offers is space - a certain breathing room for the
+                    spirit.</q
+                  >
+                </p>
+              </div>
+              <div>
+                <p>Abraham Lincoln</p>
+              </div>
+              <div class="d-flex justify-content-end">
+                <img src="img/quotation mark down.png" />
+                <!-- use alt tag and img-responsive class -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="download-wrapper">
+        <!--the section is not responsive need some changes in bootstrap code -->
+        <div class="container">
+          <div class="row download">
+            <div class="col-6 footer_dwnl_placement" id="download">
+              <div class="d-flex flex-column">
+                <p>HOW DOWNLOAD THE APP?</p>
+                <p class="text_dwnl">
+                  Just download the app from the store. Simple, nice and
+                  user-friendly application of theweather. Only relevant and
+                  useful information.
+                </p>
+              </div>
+              <div>
+                <img src="img/appstore.png" />
+                <!-- use alt tag and img-responsive class -->
+                <img src="img/google play.png" />
+                <!-- use alt tag and img-responsive class -->
+              </div>
+            </div>
+            <div class="col-6 d-flex align-items-end">
+              <img src="img/dwn phones.png" />
+              <!-- use alt tag and img-responsive class -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="row footer_menu_placement">
+            <div>
+              <a href="#header" class="navbar-brand" style="font-weight: bold">
+                <span style="color: #fc6a42">FUN</span>
+                <span style="color: #648cff">WEATHER.</span></a
+              >
+            </div>
+            <ul class="navbar-nav w-50 nav-fill ulLinks flex-row">
+              <li class="nav-item active">
+                <a class="nav-link" href="#home" style="color: #ffffff"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link footer_menu_btn" href="#features"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link footer_menu_btn" href="#reviews">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link footer_menu_btn" href="#download"
+                  >Download</a
+                >
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <span class="navbar_icons">
+                <li class="nav-item">
+                  <a href="#" class="nav-link footer_menu_btn"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <!-- reference missing (place id name here)-->
+                <li class="nav-item">
+                  <a href="#" class="nav-link footer_menu_btn"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </li>
+                <!-- reference missing (place id name here)-->
+                <li class="nav-item">
+                  <a href="#" class="nav-link footer_menu_btn"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <!-- reference missing (place id name here)-->
+              </span>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="footer_line"></div>
+        </div>
+        <div class="d-flex justify-content-end">
+          <span class="footer_copyright"
+            >© 2016 All rights reserved. Weather App Theme by Gravpix</span
+          >
+        </div>
+        <div class="d-flex justify-content-end">
+          <input
+            type="image"
+            src="img/top arrow.png"
+            class="footer_top_btn"
+            onclick="topFunction()"
+            id="footer_top_btn"
+          />
+          <!-- use alt tag and img-responsive class -->
+        </div>
+      </footer>
+    </main>
+
+    <div id="popup" class="align-items-center justify-content-center">
+      <div class="modal-content flex-row justify-content-center">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-4">
+              <img src="/img/sunny phone.png" />
+            </div>
+            <div class="col-8">
+              <p class="modal-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
+                cumque nostrum voluptatem obcaecati est eligendi aspernatur
+                accusamus quod voluptates illum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <span class="close">&times;</span>
+      </div>
+    </div>
+
+    <script>
+      var mybutton = document.getElementById("footer_top_btn");
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      var modal = document.getElementById("popup");
+
+      $(".open-popup").click(function () {
+        $("#popup").removeClass("closed").addClass("active");
+      });
+
+      var span = document.getElementsByClassName("close")[0];
+
+      // span.onclick = function() {
+      //     modal.style.display = "none";
+      // }
+
+      $(".close").click(function () {
+        $("#popup").removeClass("active").addClass("closed");
+      });
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          // modal.style.display = "none";
+          $("#popup").removeClass("active").addClass("closed");
+        }
+      };
+    </script>
+  </body>
+</html>

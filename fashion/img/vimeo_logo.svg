@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19" width="20" height="19">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-1491 -2882L429 -2882L429 1722L-1491 1722Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #5a5a5a } 
+	</style>
+	<g id="template №3" clip-path="url(#cp1)">
+		<g id="Sidebar">
+			<g id="Social media">
+				<g id="default/vimeo">
+					<path id="Path Copy 6" fill-rule="evenodd" class="shp0" d="M0 5.72C1.76 4.29 4.26 1.17 6.21 1.17C8.16 1.17 8.64 3.5 8.91 5.62C9.18 7.74 9.94 12.37 10.97 12.37C12.01 12.37 14.36 8.27 14.22 6.69C14.09 5.1 12.39 5.34 11.45 5.8C12.31 2.63 14.3 0.95 16.84 0.95C19.39 0.95 20 2.77 20 5.01C20 8.41 13.19 18.84 9.08 18.84C6.54 18.84 5.91 15.04 5.39 13.16C4.88 11.28 3.86 6.35 2.68 6.03C2.22 5.96 0.92 7 0.92 7L0 5.72Z" />
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,339 @@
+/* use width in percentages. donot assign them fix vlues*/
+
+body {
+  font-family: "Ubuntu";
+  text-rendering: optimizeSpeed;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.back {
+  background-image: url(../img/FIRST\ SCREEN.png);
+  /* use webkit-background size and -moz-background-size and others commands*/
+  width: 100%;
+  height: 960px;
+}
+
+header a {
+  color: white;
+}
+
+.navbar-brand {
+  margin-right: 6rem;
+  font-size: 24px;
+}
+
+.navbar_icons {
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 150px;
+}
+
+.ulLinks {
+  margin-right: 6rem;
+}
+
+.hero_name {
+  font-weight: 700;
+  color: white;
+  font-size: 60px;
+  line-height: 80px;
+  width: 480px;
+  /* width and height should be set in percentage not a fix value*/
+}
+
+.hero_description {
+  color: white;
+  margin-top: 1rem;
+  font-weight: 400;
+  line-height: 30px;
+  width: 387px;
+}
+
+.header_btn {
+  width: 158px;
+  height: 52px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.header_button_1 {
+  background-color: #fb6941;
+  border-color: #fb6941;
+}
+
+.header_button_2 {
+  margin-left: 1rem;
+  /* margin-left is redundant(extra)*/
+  background-color: #4466c9;
+  border-color: #4466c9;
+}
+
+.header_flex {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.6rem;
+}
+
+.mini_description {
+  color: #999999;
+}
+
+.quote_box {
+  width: 580px;
+}
+
+.text_placement {
+  margin-top: 2rem;
+}
+
+.margins {
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+}
+
+.icons_block {
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.icons_naming {
+  color: #353854;
+  font-weight: 700;
+}
+
+.icons_description {
+  color: #aeaeae;
+  width: 280px;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.text_in_main {
+  font-size: 36px;
+  color: #648cff;
+  font-weight: 700;
+}
+
+.section_description {
+  color: #353854;
+  width: 626px;
+  line-height: 35px;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.text_reviews {
+  width: 580px;
+  /* width and height should be set in percentage not a fix value*/
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.text_names {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.download {
+  width: 100%;
+  height: 465px;
+  margin-top: 8rem;
+  color: white;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.download-wrapper {
+  background-color: #648cff;
+}
+
+.footer_dwnl_placement {
+  margin-top: 8rem;
+  /* margin-top is redundant(extra)*/
+}
+
+.text_dwnl {
+  font-weight: 400;
+  width: 370px;
+  font-size: 18px;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 372px;
+  background-color: #353854;
+}
+
+.footer_menu_placement {
+  margin-top: 6rem;
+}
+
+.footer_menu_btn {
+  color: #b5b5c8;
+}
+
+.footer_line {
+  margin-top: 4.5rem;
+  width: 1590px;
+  border-bottom: 1px solid #434769;
+}
+
+.footer_copyright {
+  font-size: 16px;
+  line-height: 22px;
+  color: #565b87;
+  font-weight: 400;
+  margin-top: 4rem;
+  margin-right: 27.5rem;
+}
+
+.footer_top_btn {
+  position: absolute;
+  bottom: 0;
+  right: 4rem;
+}
+
+#popup {
+  position: fixed;
+  display: flex;
+  opacity: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0);
+  top: 0;
+  left: -100%;
+}
+
+#popup.active {
+  opacity: 1;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  animation: show-popup 2s;
+}
+
+#popup.closed {
+  animation: hide-popup 2s;
+}
+
+#popup.closed {
+  transition: 2s;
+  left: -100%;
+  opacity: 0;
+}
+
+@keyframes hide-popup {
+  from {
+    background-color: rgba(0, 0, 0, 0.4);
+    left: 0;
+    opacity: 1;
+  }
+  81% {
+    opacity: 1;
+  }
+  90% {
+    background-color: rgba(0, 0, 0, 0);
+    left: 0;
+    opacity: 0;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0);
+    left: -100%;
+    opacity: 0;
+  }
+}
+
+@keyframes show-popup {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    left: -100%;
+    opacity: 0;
+  }
+  10% {
+    background-color: rgba(0, 0, 0, 0);
+    left: 0;
+    opacity: 0;
+  }
+  11% {
+    opacity: 1;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.4);
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes popup-modal-top {
+  from {
+    transform: translateY(-100vh);
+  }
+  30% {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes popup-modal-back {
+  from {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(-100vh);
+  }
+}
+
+#popup.closed .modal-content {
+  animation: popup-modal-back 2s;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 960px;
+}
+
+#popup.active .modal-content {
+  animation: popup-modal-top 2s;
+}
+
+.modal-content img {
+  max-width: 100%;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+  width: 1rem;
+  height: 2rem;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-text {
+  margin-top: 1rem;
+}

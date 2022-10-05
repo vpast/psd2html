@@ -1,0 +1,116 @@
+.www {
+    margin-top: 25rem;
+}
+
+.www__first-line {
+    background-image: url(/assets/www__first-img.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.www__text-block {
+    max-width: 620px;
+    max-height: 450px;
+}
+
+.www__title {
+    width: 530px;
+    font-size: 48px;
+    line-height: 62px;
+    color: $primary-color;
+    font-weight: 300;
+}
+
+.www__description {
+    width: 530px;
+    height: 100px;
+    font-size: 23px;
+    line-height: 32px;
+    margin-top: 2rem;
+    color: #525f7f;
+    font-weight: 300;
+}
+
+.mini-block__flex {
+    display: flex;
+}
+
+.mini-block__item-first__placement {
+    width: 60%;
+}
+
+.mini-block__item-second__placement{ 
+    width: 40%;
+}
+
+.www__mini-title {
+    font-size: 30px;
+    line-height: 62px;
+    color: $primary-color;
+    font-weight: 300;
+}
+
+.www__mini-description {
+    width: 220px;
+    height: 46px;
+    font-size: 16px;
+    line-height: 25px;
+    color: #525f7f;
+    font-weight: 300;
+}
+
+.www__btns {
+    max-width: 460px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.www__btns a {
+    text-decoration: none;
+}
+
+.www__btns a:active, .www__btns a:hover {
+    color: $primary-color;
+}
+
+.www__btn {
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 42px;
+    color: #ffffff;
+}
+
+.www__box_rectangle {
+    width: 142px;
+    height: 42px;
+    border-radius: 3px;
+    filter: drop-shadow(-6.691px 7.431px 10px rgba(111,54,255,0.2));
+    background-color: #845cff;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.www__link {
+    color: $primary-color;
+    font-size: 19px;
+    line-height: 39px;
+}
+
+.www__second-line {
+    margin-top: 15rem;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(/assets/www__second-img.png);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: bottom;
+}
+
+.www__bottom-block {
+    margin-top: 15rem;
+    background-image: url(/assets/www__third-img.png);
+    background-repeat: no-repeat;
+    
+}

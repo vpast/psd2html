@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=cyrillic,latin' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="/сss/page_3.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container back">
+        <div class="row">
+            <div class="col-4">
+                <img src="/img/phone.png" alt="phone">
+            </div>
+            <div class="col-4">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam veniam quae officia odio. Neque ea quam, enim, voluptatibus maxime eaque, quo repudiandae reiciendis possimus illo atque odit numquam aperiam. Aperiam!
+                </p>
+            </div>
+            <div class="col-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo in optio, praesentium quod accusantium veritatis cumque! Obcaecati rerum ex optio? Soluta atque, error cum tempore maxime dolore voluptatibus ea?
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="back">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                <img src="/img/phone.png" alt="phone"> 
+                </div>
+                <div class="col-4">
+                    <img src="/img/phone.png" alt="phone">
+                </div>
+                <div class="col-4">
+                    <img src="/img/phone.png" alt="phone">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container back">
+        <div class="row">
+            <div class="col-8">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste molestiae, suscipit atque dolorum magnam fuga accusantium molestias eaque dolor reprehenderit debitis vitae eum nemo? Nihil harum amet magni aut quia?</p>
+            </div>
+            <div class="col-4 open-popup">
+                <img src="/img/phone.png" alt="phone">
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="modal align-items-center justify-content-center">
+        <div class="modal-content flex-row justify-content-center">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="/img/phone.png" alt="phone">
+                    </div>
+                    <div class="col-8">
+                        <p class="modal-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consectetur asperiores cum quos maiores earum, suscipit ad ducimus dolore iure error, molestiae aut voluptatibus, quisquam optio laudantium adipisci corporis nam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <span class="close">&times;</span>
+        </div>
+    </div>
+
+    <div class="container back">
+        <div class="row">
+            <div class="col-8">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente provident atque praesentium quam quidem delectus excepturi hic exercitationem perspiciatis? Molestiae, neque! Impedit vero cum excepturi distinctio eaque beatae. Totam, nam.</p>
+            </div>
+            <div class="col-4">
+                <img src="/img/phone.png" alt="phone">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+        var modal = document.getElementById("popup");
+        
+        $('.open-popup').click(function() {
+            $('#popup').css('display', 'flex');
+        })
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

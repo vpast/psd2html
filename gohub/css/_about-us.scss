@@ -1,0 +1,59 @@
+/** about-us **/
+
+.about-us {
+    margin-top: 11.9rem;
+}
+
+.about-us__card {
+    height: 480px;
+}
+
+.about-us__first-line {
+    margin-bottom: 4rem;
+}
+
+.about-us__title {
+    font-size: 48px;
+    line-height: 62px;
+    color: $primary-color;
+    font-weight: 300;
+}
+
+.about-us__description {
+    max-width: 500px;
+    height: 100px;
+    font-size: 23px;
+    line-height: 32px;
+    color: #525f7f;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+.about-us__card_only-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.about-us__card_bg {
+    border-radius: 10px;
+    filter: drop-shadow(-6.691px 7.431px 10px rgba(212,212,250,0.2));
+    background-color: #ffffff;
+}
+
+.about-us__card_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 4rem;
+}
+
+@media(max-width: 575px) {
+    .about-us__card {
+        height: auto;
+    }
+
+    .about-us__description {
+        height: auto;
+    }
+}

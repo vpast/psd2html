@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" width="20" height="21">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-1309 -3065L611 -3065L611 1539L-1309 1539Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #666666 } 
+		.shp1 { fill: #5a5a5a } 
+	</style>
+	<g id="template №3" clip-path="url(#cp1)">
+		<g id="Sidebar">
+			<g id="Social media">
+				<g id="instagram (6) copy 4">
+					<path id="Shape" fill-rule="evenodd" class="shp0" d="M20 6.46L20 14.04C20 17.53 17.2 20.35 13.75 20.35L6.25 20.35C2.8 20.35 0 17.53 0 14.04L0 6.46C0 2.98 2.8 0.15 6.25 0.15L13.75 0.15C17.2 0.15 20 2.98 20 6.46ZM18.12 6.46C18.12 4.03 16.16 2.05 13.75 2.05L6.25 2.05C3.84 2.05 1.87 4.03 1.87 6.46L1.87 14.04C1.87 16.48 3.84 18.46 6.25 18.46L13.75 18.46C16.16 18.46 18.12 16.48 18.12 14.04L18.12 6.46Z" />
+					<path id="Shape" fill-rule="evenodd" class="shp1" d="M15 10.25C15 13.04 12.76 15.3 10 15.3C7.24 15.3 5 13.04 5 10.25C5 7.46 7.24 5.2 10 5.2C12.76 5.2 15 7.46 15 10.25ZM13.12 10.25C13.12 8.51 11.72 7.1 10 7.1C8.28 7.1 6.87 8.51 6.87 10.25C6.87 11.99 8.28 13.41 10 13.41C11.72 13.41 13.12 11.99 13.12 10.25Z" />
+					<path id="Oval" fill-rule="evenodd" class="shp1" d="M15 5.2C15.55 5.2 16 4.75 16 4.19C16 3.63 15.55 3.18 15 3.18C14.45 3.18 14 3.63 14 4.19C14 4.75 14.45 5.2 15 5.2Z" />
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

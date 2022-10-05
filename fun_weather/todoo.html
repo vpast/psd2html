@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+</head>
+<body>
+  <div id="tasks-place"></div>
+  <form action="">
+    <input type="text" id="task-title">
+    <button id="task-add">Добавить</button>
+  </form>
+
+  <script>
+    const tasksPlace = document.querySelector('#tasks-place');
+    const taskTitle = document.querySelector('#task-title');
+    const taskAddBtn = document.querySelector('#task-add');
+
+    const add = (e) => {
+      e.preventDefault();
+      const taskDiv = document.createElement('div');
+      taskDiv.innerText = taskTitle.value;
+      tasksPlace.appendChild(taskDiv);
+    }
+
+    taskAddBtn.addEventListener('click', add);
+  </script>
+</body>
+</html>

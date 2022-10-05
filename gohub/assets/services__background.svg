@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2614 1096" width="2614" height="1096">
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="1307.264" y1="1368.87" x2="1307.264" y2="-273.539">
+			<stop offset="0" stop-color="#cbcbff"  />
+			<stop offset="1" stop-color="#f7f7ff"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { opacity: 0.122;fill: url(#grd1) } 
+	</style>
+	<g id="GoHub || Landing Page">
+		<g id="Services">
+			<path id="BG" class="shp0" d="M2277.08 1089.05C2546.56 1139.1 2762.44 873.07 2484.08 616.6C1819.02 3.81 304.14 -271.08 50.87 354.11C-127.69 794.88 205.09 1001.87 467.55 1055.25C1087.16 1181.28 1410.92 928.17 2277.08 1089.05Z" />
+		</g>
+	</g>
+</svg>
